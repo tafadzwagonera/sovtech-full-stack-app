@@ -1,0 +1,19 @@
+type Person {
+  name: String
+  height: String
+  mass: String
+  gender: String
+  homeworld: String
+}
+
+type PeopleByPageResult {
+  count: Int
+  next: String
+  previous: String
+  results: [Person!]
+}
+
+extend type Query {
+  peopleByPage(page: Int!): PeopleByPageResult!
+  personByName(name: String!): Person!
+}
