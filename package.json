@@ -10,6 +10,8 @@
   "scripts": {
     "frontend": "yarn workspace frontend start",
     "backend": "yarn workspace backend start",
+    "build:frontend": "yarn workspace frontend build",
+    "build:backend": "yarn workspace backend build",
     "start": "concurrently --kill-others-on-fail \"yarn frontend\" \"yarn backend\""
   }
 }
