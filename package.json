@@ -12,6 +12,7 @@
     "backend": "yarn workspace backend start",
     "build:frontend": "yarn workspace frontend build",
     "build:backend": "yarn workspace backend build",
+    "build": "build:backend && build:frontend",
     "start": "concurrently --kill-others-on-fail \"yarn frontend\" \"yarn backend\""
   }
 }
