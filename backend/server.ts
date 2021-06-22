@@ -10,7 +10,7 @@ app.use(cors())
 
 const server = new ApolloServer({
   schema,
-})
+}) as any
 
 server.applyMiddleware({ app, path: '/graphql' })
 app.listen(PORT, () => {
