@@ -5,7 +5,8 @@
   "license": "MIT",
   "engines": {
     "node": "14.x",
-    "npm": "6.x"
+    "npm": "6.x",
+    "yarn": "1.x"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "1.21.5",
